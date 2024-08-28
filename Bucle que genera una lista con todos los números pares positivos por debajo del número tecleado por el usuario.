@@ -1,0 +1,17 @@
+// ingrese un número
+let numero = parseInt(prompt("Introduce un número:"));
+
+// array para almacenar los números pares
+let numerosPares = [];
+
+// bucle para recorrer desde 0 hasta el número ingresado
+for (let i = 0; i < numero; i++) {
+  if (i % 2 === 0) { // Verificamos si el número es par
+    numerosPares.push(i);
+  }
+}
+
+// Mostrar los números pares
+for (let par of numerosPares) {
+  console.log(par);
+}
