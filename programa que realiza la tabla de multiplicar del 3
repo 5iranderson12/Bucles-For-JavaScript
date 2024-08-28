@@ -1,0 +1,7 @@
+// Definimos el número para la tabla de multiplicar
+const numero = 3;
+
+// Usamos un bucle para generar la tabla de multiplicar del 3
+for (let i = 1; i <= 10; i++) {
+  console.log(`${numero} x ${i} = ${numero * i}`);
+}
