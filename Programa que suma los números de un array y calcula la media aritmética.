@@ -1,0 +1,14 @@
+// Definimos el array con los números
+const numeros = [5, 9, 10, 12];
+
+// Calculamos la suma de los números del array
+let suma = 0;
+for (let i = 0; i < numeros.length; i++) {
+  suma += numeros[i];
+}
+
+// Calculamos la media aritmética
+let media = suma / numeros.length;
+
+// Mostramos el resultado
+console.log(`La media es ${media}`);
