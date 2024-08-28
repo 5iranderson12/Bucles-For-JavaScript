@@ -1,0 +1,12 @@
+// Pedimos que se introduzca el numero entero
+let numero = parseInt(prompt("Introduce un número entero:"));
+
+// Bucle para crear el triángulo de asteriscos
+let triangulo = "";
+for (let i = 1; i <= numero; i++) {
+  // Añadimos asteriscos a cada línea
+  triangulo += "*".repeat(i) + "\n";
+}
+
+// Mostramos el triángulo en consola
+console.log(triangulo);
