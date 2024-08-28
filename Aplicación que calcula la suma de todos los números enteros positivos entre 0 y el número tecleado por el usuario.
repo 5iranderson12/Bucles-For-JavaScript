@@ -1,0 +1,26 @@
+const readline = require('readline');
+
+// Creamos una interfaz para leer desde la línea de comandos
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+// Pedimos al usuario que introduzca un número
+rl.question('Introduce un número entero positivo: ', (numero) => {
+  numero = parseInt(numero);
+
+  // Inicializamos la variable para calcular la suma
+  let suma = 0;
+
+  // Generamos la suma de los enteros de 1 a numero
+  for (let i = 1; i <= numero; i++) {
+    suma += i;
+  }
+
+  // Mostramos el resultado
+  console.log(`Los enteros de 0 a ${numero} suman ${suma}.`);
+
+  // Cerramos la interfaz de lectura
+  rl.close();
+});
