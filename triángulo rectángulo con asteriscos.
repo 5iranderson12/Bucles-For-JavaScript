@@ -1,4 +1,5 @@
 // Pedimos que se introduzca el numero entero
+const prompt = require('prompt-sync')(); // agregar la libreria prompt-syn  
 let numero = parseInt(prompt("Introduce un número entero:"));
 
 // Bucle para crear el triángulo de asteriscos
